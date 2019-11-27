@@ -34,9 +34,9 @@
 ![安装docker](./img/7.jpg)
 
 ### 5. 关键时刻<br>
- 拉取镜像：`docker pull oddrationale/docker-shadowsocks`,<br> 
+ 拉取镜像：`sudo docker pull oddrationale/docker-shadowsocks`,<br> 
  <br>
- 起服务：`docker run -d -p 54285:54285 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 54285 -k yourpasswd -m aes-256-cfb`
+ 起服务：`sudo docker run -d -p 54285:54285 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 54285 -k yourpasswd -m aes-256-cfb`
 <br>
 
 ![起服务](./img/8.jpg)
@@ -44,6 +44,12 @@
 ### 6. 检查服务器端口54285是否放开，进入安全组进行设置
 
 ![img](./img/10.jpg)
+![img](./img/12.png)
+
+给服务器配置规则，就是上述配置的安全组规则
+
+![img](./img/13.png)
+
 
 ### 7. 本地安装运行小飞机ss，安装包请在代码文件 `package` 目录查找
 
