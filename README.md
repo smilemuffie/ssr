@@ -50,6 +50,17 @@
 ![img](./img/9.jpg)
 
 
+### 安装失败报错解决
+有些小伙伴遇到了这样的报错，docker 没有安装成功
+
+![img](./img/11.png)
+
+根据上面的提示是，让你执行 `sudo snap install docker` 或者 `sudo apt install docker`， 照着执行一条就行，能够 `sudo docker -v` 看到版本号即安装成功。<br>
+又有些小伙伴，在 `sudo snap install docker` 的过程中不小心断网了，导致既没有装成功，重新执行该命令也继续报错，那么这时候，你就应该把进程给 kill 了
+怎么[操作](https://blog.csdn.net/u010496966/article/details/95210734)呢？
+`snap changes`,
+`sudo snap abort X【其中X代表 进程ID】`
+
 ----
 - 1. [腾讯云服务器](https://cloud.tencent.com/act/cps/redirect?fromSource=gwzcw.3018172.3018172.3018172&redirect=10140&cps_key=1f60ff9e0192ca8340b519ea987139b3&from=activity) 
 - 2. [阿里云服务器](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=1g8zd89z)
